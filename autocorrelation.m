@@ -57,9 +57,6 @@ for y=3:9
 dt=0.0050;
 ll= Langevin(0,1,T,dt,length(t));
 
-% i = xcorr(ll,"unbiased");
-% i = i(floor(length(i)/2)+1:length(i),1);
-
 [lags,Rxx]= xcorr(ll,ll);
 
 figure (y)
